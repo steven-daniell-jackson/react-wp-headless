@@ -57,6 +57,10 @@ define( 'NONCE_SALT',       '56de6c75d8c4b2e94509d761868b15a37193136a');
 
 /**#@-*/
 
+
+define('JWT_AUTH_SECRET_KEY', 'your-top-secret-key');
+define('JWT_AUTH_CORS_ENABLE', true);
+
 /**
  * WordPress Database Table prefix.
  *
