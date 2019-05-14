@@ -321,3 +321,14 @@ require get_template_directory() . '/inc/template-tags.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
+
+// Remove Excerpt defauit
+add_filter( 'get_the_excerpt', 'sj_default_excerpt' );
+function sj_default_excerpt( $excerpt )
+{
+    if ( '' == $excerpt ) {
+        return null;
+    }
+    return $excerpt;
+}
