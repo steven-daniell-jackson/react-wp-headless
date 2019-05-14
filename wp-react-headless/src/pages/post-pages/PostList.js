@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { PostItem } from './PostItem';
+import PostItem from './PostItem';
 import axios from 'axios';
 
 export class PostList extends Component {

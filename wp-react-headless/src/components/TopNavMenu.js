@@ -5,7 +5,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
-class SimpleMenu extends React.Component {
+class TopNavMenu extends React.Component {
   state = {
     anchorEl: null
   };
@@ -45,4 +45,4 @@ class SimpleMenu extends React.Component {
   }
 }
 
-export default SimpleMenu;
+export default TopNavMenu;

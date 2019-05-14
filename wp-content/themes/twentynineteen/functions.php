@@ -324,6 +324,13 @@ require get_template_directory() . '/inc/customizer.php';
 
 
 // Remove Excerpt defauit
+add_action( 'init', 'wpse17478_init' );
+function wpse17478_init()
+{
+    remove_filter( 'get_the_excerpt', 'wp_trim_excerpt' );
+}
+
+// Remove Excerpt defauit
 add_filter( 'get_the_excerpt', 'sj_default_excerpt' );
 function sj_default_excerpt( $excerpt )
 {

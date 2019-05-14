@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <TopNavBar />Header
+        <TopNavBar />
       </header>
       <Router>
         <Fragment>
