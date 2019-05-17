@@ -13,10 +13,10 @@ import { PostList } from './pages/post-pages/PostList';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <TopNavBar />
-      </header>
       <Router>
+        <header className="App-header">
+          <TopNavBar />
+        </header>
         <Fragment>
           <Route exact path="/" component={Homepage} />
           <Route exact path="/post-list" component={PostList} />

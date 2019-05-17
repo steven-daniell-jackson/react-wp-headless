@@ -17,6 +17,7 @@ import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import { stripHtml } from '../../functions/helper-functions';
+
 const styles = theme => ({
   card: {
     maxWidth: 400,
@@ -129,7 +130,7 @@ class PostItem extends React.Component {
         </Card>
       );
     }
-    return null;
+    return <h3>Loading...</h3>;
   }
 }
 
